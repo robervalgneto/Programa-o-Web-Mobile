@@ -1,54 +1,64 @@
-body{
-    background-color: white;
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-.All{
+
+.All {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
 }
-.Titulo{
-    display: flex;
-    font-size: 32px;
-    font-family: Arial, Helvetica, sans-serif;
-    justify-content: center;
-   
+
+.Titulo, .Texto-rotina, .Texto-rock, .Frase {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #444;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
-.Texto-rotina{
-    display: flex;
-    font-size: 32px;
-    font-family: Arial, Helvetica, sans-serif;
-    justify-content: center;
+
+.Titulo {
+    color: #2c3e50;
 }
-.Texto-rock{
-    display: flex;
-    font-size: 32px;
-    font-family: Arial, Helvetica, sans-serif;
-    justify-content: center;
+
+.Texto-rotina {
+    color: #8e44ad;
 }
-.foto{
-    display: flex;
-    justify-content: center;
-    
+
+.Texto-rock {
+    color: #e74c3c;
 }
-.video{
+
+.foto, .video, .Audio {
     display: flex;
     justify-content: center;
+    padding: 15px;
 }
-.Audio{
-    display: flex;
-    justify-content: center;
+
+.foto img, .video iframe, .Audio audio {
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
-.Frase{
-    display: flex;
-    justify-content: center;
-    font-size: 32px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.link-contato{
-    display: flex;
-    justify-content: center;
+
+.link-contato {
     font-size: 22px;
-    font-family: Arial, Helvetica, sans-serif;
-    
+    text-align: center;
+    padding: 10px;
+}
+
+.link-contato a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.link-contato a:hover {
+    color: #1abc9c;
+    text-decoration: underline;
 }
