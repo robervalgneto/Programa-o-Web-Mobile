@@ -1,15 +1,13 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
 
 body {
-    background-color: #1e1e1e; /* Fundo escuro */
-    color: #f4f4f4; /* Texto claro para contraste */
+    background-color: #1e1e1e;
+    color: #f4f4f4;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Estrutura principal */
 .All {
     display: flex;
     flex-direction: column;
@@ -18,7 +16,6 @@ body {
     padding: 40px 20px;
 }
 
-/* Estilização dos títulos */
 .Titulo, .Texto-rotina, .Texto-rock, .Frase {
     font-size: 38px;
     font-weight: bold;
@@ -30,7 +27,6 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
-/* Cores personalizadas */
 .Titulo {
     background: linear-gradient(135deg, #ff8c00, #ff0055);
     color: white;
@@ -48,12 +44,10 @@ body {
     color: white;
 }
 
-/* Efeito de hover nos textos */
 .Titulo:hover, .Texto-rotina:hover, .Texto-rock:hover, .Frase:hover {
     transform: scale(1.05);
 }
 
-/* Estilização para imagens, vídeos e áudios */
 .foto, .video, .Audio {
     display: flex;
     justify-content: center;
@@ -70,7 +64,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Link de contato */
 .link-contato {
     font-size: 24px;
     text-align: center;
