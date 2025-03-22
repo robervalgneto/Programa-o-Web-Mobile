@@ -17,20 +17,26 @@ body {
     height: 100vh;
     padding: 20px;
     transition: background-color 0.3s ease-in-out;
+    flex-direction: column;
+    text-align: center;
 }
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    gap: 20px;
     font-size: 36px;
     font-weight: bold;
     background: linear-gradient(135deg, #ff8c00, #ff0055);
     color: white;
-    padding: 30px 50px;
+    padding: 40px 60px;
     border-radius: 16px;
     box-shadow: 0 6px 15px rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    max-width: 80%;
 }
 
 .container:hover {
