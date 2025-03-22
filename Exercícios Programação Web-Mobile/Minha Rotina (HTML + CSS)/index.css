@@ -1,64 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+
 body {
-    background-color: #f4f4f4;
-    color: #333;
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background-color: #1e1e1e; /* Fundo escuro */
+    color: #f4f4f4; /* Texto claro para contraste */
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* Estrutura principal */
 .All {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    padding: 20px;
+    gap: 25px;
+    padding: 40px 20px;
 }
 
+/* Estilização dos títulos */
 .Titulo, .Texto-rotina, .Texto-rock, .Frase {
-    font-size: 36px;
+    font-size: 38px;
     font-weight: bold;
     text-align: center;
-    color: #444;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    padding: 15px 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
+/* Cores personalizadas */
 .Titulo {
-    color: #2c3e50;
+    background: linear-gradient(135deg, #ff8c00, #ff0055);
+    color: white;
 }
-
 .Texto-rotina {
-    color: #8e44ad;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
 }
-
 .Texto-rock {
-    color: #e74c3c;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+}
+.Frase {
+    background: linear-gradient(135deg, #2ed573, #1abc9c);
+    color: white;
 }
 
+/* Efeito de hover nos textos */
+.Titulo:hover, .Texto-rotina:hover, .Texto-rock:hover, .Frase:hover {
+    transform: scale(1.05);
+}
+
+/* Estilização para imagens, vídeos e áudios */
 .foto, .video, .Audio {
     display: flex;
     justify-content: center;
-    padding: 15px;
+    padding: 20px;
 }
 
 .foto img, .video iframe, .Audio audio {
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
 }
 
+.foto img:hover, .video iframe:hover, .Audio audio:hover {
+    transform: scale(1.05);
+}
+
+/* Link de contato */
 .link-contato {
-    font-size: 22px;
+    font-size: 24px;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
 }
 
 .link-contato a {
-    color: #2980b9;
+    color: #ff9800;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
 }
 
 .link-contato a:hover {
-    color: #1abc9c;
+    color: #ffeb3b;
     text-decoration: underline;
+    transform: scale(1.1);
 }
